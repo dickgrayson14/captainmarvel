@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário Topzera</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+			font-family: sans-serif;
+		}
+
+		label {
+			color: green;
+		}
+		.box {
+			border: 1px solid gray;
+			border-radius: 5px;
+			max-width: 500px;
+			box-shadow: 3px 3px 3px black;
+			padding: 10px 30px 10px 10px;
+			background-color: #89170;
+		}
+		input:hover {
+			background-color: gray;
+			border-color: green;
+		}
+		input:focus {
+			background-color: white;
+			border-color: green;
+			color: green;
+		}
+		.box-campos {
+			margin-bottom: 20px;
+		} 
+		.formataInput{
+			width: 100%;
+			height: 30px;
+			margin-top: 5px;
+			background-color: lightgreen;
+			border-radius: 10px;
+		}
+		.button{
+			width: 100%;
+			color: black;
+			font-size: 20px;
+			text-shadow: 1px 1px gray;
+			border-radius: 10px;
+			padding: 10px 0px 10px 0px;
+			background-color: #2ecc71;
+			border-bottom: 5px solid #27ae60;
+			border-right: 5px solid #27ae60;
+			border-top: 5px solid #2ecc71;
+			border-left: 5px solid #2ecc71; 
+		}
+		.button:hover{
+			background-color: #2ecc71;
+			border-bottom:5px solid #2ecc71;
+			border-right: 5px solid #2ecc71;
+			border-top: 5px solid #27ae60;
+			border-left:5px solid #27ae60;
+		}
+		.button:focus{
+			background-color: #2ecc71;
+			border-bottom:5px solid #2ecc71;
+			border-right: 5px solid #2ecc71;
+			border-top: 5px solid #27ae60;
+			border-left:5px solid #27ae60;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="box">
+
+	<h1>Novo Usuário</h1>
+	<form>
+
+		<div class="box-campos">
+		<label for="nome">Nome: </label>
+		<input class="formataInput" type="text" name="nome" id="nome" placeholder="Digite seu nome" required minlength="5">
+		<br>
+		</div>
+
+		<div class="box-campos">
+		<label for="email">E-mail: </label>
+		<input class="formataInput" type="email" id="email" required placeholder="nome@email.com">
+		<br>
+		</div>
+
+		<div class="box-campos">
+		<label for="senha">Senha: </label>
+		<input class="formataInput" type="password" id="senha" minlength="6" required>
+		<br>
+		</div>
+
+		<div class="box-campos">
+		<label>Escolha suas frutas favoritas: </label>
+		<input type="checkbox" id="laranja" value="laranja">
+		<label for="laranja">Laranja</label>
+		<input type="checkbox" id="maca" value="maca">
+		<label for="maca">Maçã</label>
+		<input type="checkbox" id="banana" value="banana">
+		<label for="banana">Banana</label>
+		<br>
+		</div>
+
+		<div class="box-campos">
+		<label>Sexo: </label>
+		<input type="radio" name="sexo" id="f" value="f">
+		<label for="f">F</label>
+		<input type="radio" name="sexo" id="m" value="m">
+		<label for="m">M</label>
+		<br>
+		</div>
+
+		<div class="box-campos">
+		<label for="cor">Escolha uma cor: </label>
+		<input class="formataInput" type="color" id="cor">
+		<br>
+		</div>
+
+		<div class="box-campos">
+		<label for="aniversario">Data de Aniversário: </label>
+		<input class="formataInput" type="date" id="aniversario" required>
+		<br>
+		</div>
+
+		<div class="box-campos">
+		<label for="idade">Idade:</label>
+		<input class="formataInput" type="number" id="idade" min="10">
+		<br>
+		</div>
+
+		<div class="box-campos">
+		<label for="nota">Nota: </label>
+		<input class="formataInput" type="range" id="nota" min="0" max="10">
+		<br>
+		</div>
+
+		<div class="box-campos">
+		<label for="pagina">Página: </label>
+		<input class="formataInput" type="url" id="pagina" placeholder="https://suapagina.com">
+		<br>
+		</div>
+
+		<div class="box-campos">
+		<input class="button" type="submit" value="Cadastrar">
+		</div>
+
+
+			</form>
+
+			</div>
+
+</body>
+</html>
