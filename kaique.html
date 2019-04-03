@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulário</title>
+</head>
+<body>
+
+<h1>Formulário - Cadastro de Funcionário</h1>
+
+<form action="http://www.profasimone.com.br/cadastro.php" method="post">
+	<label for="nome">Nome:<br></label>
+	<input type="text" name="nome" size="50" maxlength="40" minlength="2" placeholder="Digite o seu nome" id="nome" required>
+
+	<br><br>
+
+	<label for="idade">Idade:<br></label>
+	<input id="idade" type="number" size="3" placeholder="idade"
+
+	min="14" max="18" step="2" name="idade">
+
+	<br><br>
+
+	<label for="senha">Senha:<br></label>
+	<input id="senha" name="senha" type="password" placeholder="senha" required>
+
+	<br><br>
+
+	<label for="cargo">Cargo:</label><br>
+	<input id="cargo" name="cargo" type="text" value="Professora" readonly> 
+
+	<br><br>
+
+	<label for="cor">Cor preferida:</label><br>
+	<input id="cor" name="cor" type="color" value="#ff0000">
+
+	<br><br>
+
+	Sexo:<br>
+	<label for="masc">M</label>
+	 <input id="masc" type="radio" name="sexo" value="M">
+
+	<label 	for="fem">F</label>
+	 <input id="fem" type="radio" name="sexo" value="F" checked>
+
+	<br><br>
+
+	Períodos de aula:<br>
+	<input id="manhã" type="checkbox" name="manhã"><label for="manhã">Manhã</label>
+	<input id="tarde" type="checkbox" name="tarde" checked><label for="tarde">Tarde</label>
+	<input id="noite" type="checkbox" name="noite"><label for="noite">Noite</label>
+
+	<br><br>
+	<fieldset>
+		<legend>Data</legend>
+	<label for="dataNasc">Data de nascimento:<br></label>
+	<input id="dataNasc" type="date" name="dataNasc">
+
+	<br><br>
+
+	<label for="DataHoraCad">Data e hora do cadastro - local:</label>
+	<input id="DataHoraCad" type="datetime-local" name="DataHoraCad">
+
+	<br><br>
+
+	<label for="horaCad">Horário do cadastro:<br></label>
+	<input id="horaCad" type="time" name="horaCad">
+
+	<br><br>
+
+	<label for="mesAniv">Mês do aniversário:<br></label>
+	<input id="mesAniv" type="month" name="mesAniv">
+
+	<br><br>
+
+	<label for="semanaNasc">Semana do aniversário:<br></label>
+	<input id="semanaNasc" type="week" name="semanaNasc">
+
+</fieldset>
+
+	<br><br>
+
+	<label for="curso">Curso:<br></label>
+	<select id="curso" name="curso">
+		<option value="Informática">Informática</option>
+		<option value="Edificações">Edificações</option>
+		<option value="Geodésia">Geodésia</option>
+		<option value="Enfermagem">Enfermagem</option>
+		<option value="Qualidade">Qualidade</option>
+		<option value="Mecânica" selected>Mecânica</option>
+	</select>
+	
+	<br><br>
+
+	<select id="areas" name="areas" size="3" multiple>
+		<option value="Exatas">Exatas</option>
+		<option value="Humanas">Humanas</option>
+		<option value="Biológicas">Biológicas</option>
+	</select>
+
+	<br><br>
+
+	<label for="Veículo">Veículo que utlizará no campus:<br></label>
+
+	<select id="Veículo" name="Veículo">
+		<optgroup label="Carros">
+			<option value="GM">GM</option>
+			<option value="VW">VW</option>
+			<option value="Renault">Renault</option>
+		</optgroup>
+
+		<optgroup label="Motos">
+			<option value="Honda">Honda</option>
+			<option value="Yamaha">Yamaha</option>
+			<option value="Suzuki">Suzuki</option>
+		</optgroup>
+	</select>
+
+	<br><br>
+
+	<input id="lista-conhecimento" name="conhecimento" list="lista-conhecimento">
+
+	 <datalist id="lista-conhecimento" name="lista-conhecimento" >
+	 	<option value="HTML5">HTML5</option>
+	 	<option value="HTML4">HTML4</option>
+	 	<option value="CSS3">CSS3</option>
+	 	<option value="PHP">PHP</option>	
+	 </datalist>
+
+	 <br><br>
+
+	 <label for="Capacitação">Capacitação:<br></label>
+	 <input id="Capacitação" name="Capacitação" type="range" min="0" max="10">
+
+	 <br><br>
+
+	 <label for="foto">Foto:<br></label>
+	 <input id="foto" type="file" name="foto" accept=".jpg,.gif,.png">
+
+	 <br><br>
+
+	 <label for="Observações">Observações:<br></label>
+	 <textarea id="Observações" name="Observações" rows="5" cols="50">
+	 </textarea>
+
+	  <br><br>
+	  <label for="E-mail">E-mail:<br></label>
+	  <input id="E-mail" name="E-mail" type="email" size="50" placeholder="E-mail">
+
+	   <br><br>
+	   <label for="Buscar">Buscar:<br></label>
+	   <input id="Buscar" name="Buscar" type="search" placeholder="termo da pesquisa">
+
+	    <br><br>
+	    <label for="site">Site:<br></label>
+	    <input id="site" name="site" type="url" placeholder="site">
+
+	     <br><br>
+  <input type="button" onclick="alert('oi!');" value="botão">
+	     <input type="reset" value="limpar">
+		<input type="submit" name="conectar">
+
+	 <br><br>
+
+</form>
+
+</body>
+</html>
